@@ -1,15 +1,19 @@
-import { test, expect } from '@playwright/test';
-
-// --- CONFIGURACIÓN DE VELOCIDAD ---
-test.use({
-  launchOptions: { slowMo: 1000 },
-});
+// ------ TITULO ---------------------
+//Verificar Carga de citas en Modal Cancelacion Dia
+//QA a cargo: .....
 
 //----DESCRIPCION -------
 // El siguiente test case tiene por objeto verificar la carga de citas
 // agendadas, navegando entre meses y para poder ver las citas que se
 // pueden cancelar.
 // QA a cargo: .....
+
+import { test, expect } from '@playwright/test';
+
+test.use({
+  launchOptions: { slowMo: 1000 },
+});
+
 
 test('Verificar Carga de citas en Modal Cancelacion Dia', async ({ page }) => {
   // 1. Navegar a la aplicación

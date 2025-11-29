@@ -1,14 +1,17 @@
-import { test, expect } from '@playwright/test';
-
-// --- CONFIGURACIÓN DE VELOCIDAD ---
-test.use({
-  launchOptions: { slowMo: 1000 },
-});
+// ------ TITULO ---------------------
+//Verificar disponibilidad de horarios Calendario FIXER
+//QA a cargo: .....
 
 //----DESCRIPCION -------
 // El siguiente test case tiene por objeto verificar la disponibilidad
 // de un FIXER en el calendario, navegando por la vista mensual, semanal
 // y diaria
+
+import { test, expect } from '@playwright/test';
+
+test.use({
+  launchOptions: { slowMo: 1000 },
+});
 
 test('Verificar navegación en Calendario (Mensual/Semanal/Diaria)', async ({ page }) => {
   // 1. Ir a la página
