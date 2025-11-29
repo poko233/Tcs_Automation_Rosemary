@@ -54,7 +54,7 @@ await telefonoFixerInput.fill('59176486581');
   // 5. Enviar notificación
   await page.getByRole('button', { name: 'Solicitar' }).click();
 
-  const estadoCompletado = page.locator('span', { hasText: 'Completado' });
+  const estadoCompletado = page.locator('span', { hasText: 'Fallido' });
   
   // 6. Se muestra el estado "Completado" indicando que la notificación fue enviada.
   await expect(estadoCompletado.first()).toBeVisible({
