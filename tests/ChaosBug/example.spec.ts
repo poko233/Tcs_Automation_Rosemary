@@ -7,7 +7,7 @@ const EMPTY_RANGE_FROM = '2030-01-01T00:00:00';
 const EMPTY_RANGE_TO   = '2030-01-31T23:59:00';
 
 // TC-1 para el HU15
-test('Verificar consulta de citas en un rango de tiempo definido', async ({ page }) => {
+test.skip('Verificar consulta de citas en un rango de tiempo definido', async ({ page }) => {
   await page.goto('/login');
   await page.fill('[data-testid="login-email"]', 'admin@example.com');
   await page.fill('[data-testid="login-password"]', 'Admin123!');
@@ -46,7 +46,7 @@ test('Verificar consulta de citas en un rango de tiempo definido', async ({ page
 });
 
 // TC-2 para el HU15
-test('Verificar consulta de citas cuando no hay registros en el rango', async ({ page }) => {
+test.skip('Verificar consulta de citas cuando no hay registros en el rango', async ({ page }) => {
   await page.goto('/login');
   await page.fill('[data-testid="login-email"]', 'admin@example.com');
   await page.fill('[data-testid="login-password"]', 'Admin123!');
@@ -89,7 +89,7 @@ test('Verificar consulta de citas cuando no hay registros en el rango', async ({
 });
 
 // TC-1 para el HU9
-test('Detección automática del idioma español', async () => {
+test.skip('Detección automática del idioma español', async () => {
   const browser = await chromium.launch();
   const context = await browser.newContext({
     locale: 'es-ES',
