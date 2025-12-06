@@ -1,7 +1,8 @@
 import { test, expect } from '@playwright/test';
 
-// const BASE_URL = 'https://servineo.app'; // URL Produccion
-const BASE_URL = 'https://servineo-frontend-bytes-bandidos.vercel.app';
+const BASE_URL = 'https://servineo.app'; // URL Produccion
+// const BASE_URL = 'http://localhost:3000';
+// const BASE_URL = 'https://servineo-frontend-bytes-bandidos.vercel.app';
 
 // test.setTimeout(60000); // Fix para el error de timeout; aplica a todos los tests de este archivo
 
