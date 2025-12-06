@@ -1,4 +1,4 @@
-// Verificar que certificacion sea eliminada de manera correcta
+// Verificar que certificacion sea eliminada de perfil fixer
 //  ---- DESCRIPCIÓN -------
 // Se accede a la página principal de Servineo y se cierra el modal inicial si aparece.
 // Luego, se navega al formulario de inicio de sesión, se ingresan credenciales válidas y se hace login.
