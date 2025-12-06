@@ -1,3 +1,12 @@
+// Verificar que certificacion sea eliminada de manera correcta
+//  ---- DESCRIPCIÓN -------
+// Se accede a la página principal de Servineo y se cierra el modal inicial si aparece.
+// Luego, se navega al formulario de inicio de sesión, se ingresan credenciales válidas y se hace login.
+// Una vez dentro, se abre el menú de usuario, se accede al "Perfil de Fixer", se abre la sección de "Certificaciones",
+// se elimina la primera certificación y se confirma la acción.
+// Finalmente, se espera 5 segundos para verificar visualmente que la certificación fue eliminada.
+//Correr con npx playwright test -g "Login en Servineo" --project=chromium --headed
+
 import { test, expect } from '@playwright/test';
 
 test('AQARius - Login en Servineo', async ({ page, browserName }) => {
