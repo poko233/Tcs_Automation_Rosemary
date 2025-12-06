@@ -19,7 +19,6 @@ test('TC - Verificar consulta de citas en un rango de tiempo definido en trackin
     'body > div.w-full.min-h-screen.bg-gray-50.pb-10 > div > div.grid.grid-cols-1.lg\\:grid-cols-4.gap-6.lg\\:h-\\[550px\\] > div.lg\\:col-span-3.bg-white.rounded-xl.shadow.border.border-gray-200.overflow-hidden.relative.z-0.h-\\[400px\\].lg\\:h-full > div > div > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-marker-pane'
   );
   const pinCount = await markerPane.locator('img').count();
-  console.log({pinCount});
 
   const totalText = await totalLabel.innerText();
   const match = totalText.match(/\d+/);
